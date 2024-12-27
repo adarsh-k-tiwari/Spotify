@@ -1,0 +1,5 @@
+pandas
+snowflake
+python-dotenv
+requests
+openai

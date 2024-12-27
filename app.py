@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 import os
 import requests
 import openai
-from bs4 import BeautifulSoup
 
 # Load environment variables
 load_dotenv()
