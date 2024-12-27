@@ -30,7 +30,7 @@ SPOTIFY_CONFIG = {
 
 SNOWFLAKE_CONFIG = {
     'conn_id': 'snowflake_default',
-    'table': ['SPOTIFY_TRACKS', 'ARTIST_DETAILS']
+    'table': ['SPOTIFY_TRACKS', 'ARTISTS', 'ALBUMS', 'TRACKS']
 }
 
 KAFKA_CONN_ID = "kafka_default"
@@ -75,7 +75,7 @@ def fetch_spotify_data(table_name, **context):
         :context (dict): Airflow context containing the task instance
         :table_name (str): Target table name in Snowflake
     Returns:
-        dct: Collected data dictionary from Spotify API
+        dict: Collected data dictionary from Spotify API
     """
     topic = f"{table_name}_topic"
     try:
