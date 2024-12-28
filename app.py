@@ -162,7 +162,16 @@ def main():
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Documentation","Chart Surge","TuneMender", "AI Harmonizer", "LyricScope", "Music Insights"])
     
     with tab1:
-        st.header("How to use this?")
+        st.header("Introduction")
+        st.write("The Rhythm Flow app is a music analytics platform that integrates the Spotify API with Snowflake, Airflow, Kafka, Streamlit, and Tableau. It collects and processes user data in real-time, leveraging Kafka for streaming and Airflow for orchestration. Data is stored and analyzed using Snowflake, and the results are visualized in a Streamlit web interface. This app provides insights into user listening habits, playlists, and top tracks, offering a seamless experience to explore and analyze music data dynamically.")
+
+        st.header("Features of App")
+        st.write("Chart Surge: Get real-time top 10 global songs by popularity.")
+        st.write("TuneMender: Get recommendation of 5 songs based on your favorite songs.")
+        st.write("AI Harmonizer: AI-generated personalized playlists using Phi-3.5-Instruct model.")
+        st.write("LyricScope: Generate summary of song from on its lyrics.")
+        st.write("Music Insights: A Tableau Dashboard for visalizing the trends of albums, artists, and tracks.")
+        
     with tab2:
         st.header("Chart Surge")
         try:
