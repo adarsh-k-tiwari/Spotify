@@ -163,7 +163,10 @@ def main():
     
     with tab1:
         st.header("Introduction")
-        st.write("The Rhythm Flow app is a music analytics platform that integrates the Spotify API with Snowflake, Airflow, Kafka, Streamlit, and Tableau. It collects and processes user data in real-time, leveraging Kafka for streaming and Airflow for orchestration. Data is stored and analyzed using Snowflake, and the results are visualized in a Streamlit web interface. This app provides insights into user listening habits, playlists, and top tracks, offering a seamless experience to explore and analyze music data dynamically.")
+        st.markdown("""The Rhythm Flow app is a music analytics platform that integrates the Spotify API with Snowflake, Airflow, Kafka, Streamlit, and Tableau. <br>
+        It collects and processes user data in real-time, leveraging Kafka for streaming and Airflow for orchestration. <br>
+        Data is stored and analyzed using Snowflake, and the results are visualized in a Streamlit web interface.<br>
+        This app provides insights into user listening habits, playlists, and top tracks, offering a seamless experience to explore and analyze music data dynamically.""", unsafe_allow_html=True)
 
         st.header("Features of App")
         st.markdown("""- Chart Surge: Get real-time top 10 global songs by popularity.
