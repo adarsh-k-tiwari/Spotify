@@ -29,6 +29,7 @@ def connect_to_snowflake():
     )
     return conn
 conn = connect_to_snowflake()
+
 # Fetch top 50 songs from Snowflake
 def fetch_top_10_songs():
     conn = connect_to_snowflake()
@@ -158,12 +159,12 @@ def main():
     st.markdown('<h1 style="text-align: left"><span style="font-size:2em; color:#ff4361; align:center;font-weight: 700;  font-family: Poppins, sans-serif; font-style: normal;">  R H Y T H M &ensp; F L O W</span></h1>', unsafe_allow_html=True)
 
     huggingFace_api_key = os.getenv("HF_KEY")
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Documentation","Top 50 Songs","Recommend Songs", "Generate AI Playlist", "View Song Summary", "Dashboard"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Documentation","Chart Surge","TuneMender", "AI Harmonizer", "LyricScope", "Music Insights"])
     
     with tab1:
         st.header("How to use this?")
     with tab2:
-        st.header("Discover Top 10 Songs")
+        st.header("Chart Surge")
         try:
             top_songs = fetch_top_10_songs()
             st.markdown(
@@ -175,7 +176,7 @@ def main():
     
 
     with tab3:
-        st.header("Discover New Songs")
+        st.header("TuneMender")
         with st.form(key="recommendation_form", border=False):
             song = st.text_input("Enter your favorite song")
             submit = st.form_submit_button("Submit")
@@ -185,7 +186,7 @@ def main():
                     """, unsafe_allow_html=True)
     
     with tab4:
-        st.header("Generate AI Playlist")
+        st.header("AI Harmonizer")
         with st.form(key="ai_playlist_form", border=False):
             song = st.text_input("Enter your 5 favorite songs")
             submit = st.form_submit_button("Submit")
@@ -195,7 +196,7 @@ def main():
                     """, unsafe_allow_html=True)
     
     with tab5:
-        st.header("View Song Summary")
+        st.header("LyricScope")
         with st.form(key="summary_form", border=False):
             song = st.text_input("Enter your favorite song")
             artist = st.text_input("Enter your favorite song's artist")
@@ -206,7 +207,7 @@ def main():
                     """, unsafe_allow_html=True)
 
     with tab6:
-        st.header("Tableau Dashboard")
+        st.header("Music Insights")
         st.write("Comming Soon!!")
     
 
