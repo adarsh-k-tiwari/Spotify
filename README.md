@@ -8,6 +8,9 @@ The Rhythm Flow app is a music analytics platform that integrates the Spotify AP
 - [@Adarsh Kumar](https://github.com/adarsh-k-tiwari/)
 
 ---
+
+## System Architecture
+![arch](https://github.com/adarsh-k-tiwari/Spotify/blob/main/architecture.png?raw=true)
 ## Features
 
 - **Chart Surge**: Get real-time top 10 global songs by popularity.
@@ -19,7 +22,7 @@ The Rhythm Flow app is a music analytics platform that integrates the Spotify AP
 ---
 
 ## Demo
-https://google.com/
+[https://rhythmflow.streamlit.app/](https://rhythmflow.streamlit.app/)
 
 ---
 ## Folder Structure
