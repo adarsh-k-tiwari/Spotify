@@ -167,10 +167,10 @@ def main():
 
         st.header("Features of App")
         st.markdown("""- Chart Surge: Get real-time top 10 global songs by popularity.
-        - TuneMender: Get recommendation of 5 songs based on your favorite songs.
-        - AI Harmonizer: AI-generated personalized playlists using Phi-3.5-Instruct model.
-        - LyricScope: Generate summary of song from on its lyrics.
-        - Music Insights: A Tableau Dashboard for visalizing the trends of albums, artists, and tracks.""")
+- TuneMender: Get recommendation of 5 songs based on your favorite songs.
+- AI Harmonizer: AI-generated personalized playlists using Phi-3.5-Instruct model.
+- LyricScope: Generate summary of song from on its lyrics.
+- Music Insights: A Tableau Dashboard for visalizing the trends of albums, artists, and tracks.""")
         
     with tab2:
         st.header("Chart Surge")
