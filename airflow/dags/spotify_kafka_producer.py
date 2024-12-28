@@ -1,4 +1,4 @@
-# from airflow.providers.apache.kafka.hooks.produce import KafkaProducerHook
+# Kafka Producer
 import json
 from kafka import KafkaProducer
 
