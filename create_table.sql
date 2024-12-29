@@ -41,7 +41,7 @@ CREATE TABLE playlists (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Record creation timestamp
 );
 
-CREATE TABLE playlist_tracks (
+CREATE TABLE spotify_tracks (
     playlist_id VARCHAR,                     -- Foreign key to playlists
     track_id VARCHAR,                        -- Foreign key to tracks
     added_at TIMESTAMP,                      -- Timestamp when the track was added to the playlist
