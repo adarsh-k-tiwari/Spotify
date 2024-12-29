@@ -1,16 +1,17 @@
 # Rhythm Flow
 
-The Rhythm Flow app is a music analytics platform that integrates the Spotify API with Snowflake, Airflow, Kafka, Streamlit, and Tableau. It collects and processes user data in real-time, leveraging Kafka for streaming and Airflow for orchestration. Data is stored and analyzed using Snowflake, and the results are visualized in a Streamlit web interface. This app provides insights into user listening habits, playlists, and top tracks, offering a seamless experience to explore and analyze music data dynamically.
+The Rhythm Flow app [(Demo)](https://rhythmflow.streamlit.app/) is a music analytics platform that integrates the Spotify API with Snowflake, Airflow, Kafka, PySpark, Streamlit, and Tableau. It collects and processes user data in real-time, leveraging Kafka for streaming and Airflow for orchestration. Data is stored and analyzed using Snowflake, and the results are visualized in a Streamlit web interface. This app provides insights into user listening habits, playlists, and top tracks, offering a seamless experience to explore and analyze music data dynamically.
 
----
-
-## Author
-- [@Adarsh Kumar](https://github.com/adarsh-k-tiwari/)
 
 ---
 
 ## System Architecture
 ![arch](https://github.com/adarsh-k-tiwari/Spotify/blob/main/architecture.png?raw=true)
+
+---
+## Snowflake Tables Relationship
+![table](https://github.com/adarsh-k-tiwari/Spotify/blob/main/snowflake_schema.png?raw=true)
+
 ## Features
 
 - **Chart Surge**: Get real-time top 10 global songs by popularity.
@@ -18,11 +19,6 @@ The Rhythm Flow app is a music analytics platform that integrates the Spotify AP
 - **AI Harmonizer**: AI-generated personalized playlists using Phi-3.5-Instruct model.
 - **LyricScope**: Generate summary of song from on its lyrics.
 - **Music Insights**: A Tableau Dashboard for visalizing the trends of albums, artists, and tracks.
-
----
-
-## Demo
-[https://rhythmflow.streamlit.app/](https://rhythmflow.streamlit.app/)
 
 ---
 ## Folder Structure
